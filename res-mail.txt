@@ -1,9 +1,24 @@
 set FQDN 
- hostname -fqdn
+# hostname -fqdn
 
 set domain name
- sudo hostnamectl set-hostname mx.example.com
+# sudo hostnamectl set-hostname mx.example.com
  
 check domain name
- hostname -f
+# hostname -f
+ 
+iRedMail needs official Debian/Ubuntu apt repositories, please enable them in /etc/apt/sources.list.
+Install package gzip so that you can uncompress downloaded iRedMail package.
+# sudo apt-get install gzip
+ 
+Download  iRedmail
+# https://www.iredmail.org/download.html
+ 
+Uncompress iRedMail tarball
+# tar zxf iRedMail-x.y.z.tar.gz
+
+Start installer
+# cd /root/iRedMail-x.y.z/
+# bash iRedMail.sh
+
  
