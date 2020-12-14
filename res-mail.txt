@@ -1,0 +1,4 @@
+set FQDN 
+ hostname -fqdn
+
+ sudo hostnamectl set-hostname mx.example.com
